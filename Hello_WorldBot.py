@@ -6,7 +6,7 @@ bot = telebot.TeleBot(token=token)
 
 @bot.message_handler(content_types=["text"])
 
-def repeat_all_messages(message):
+def hello_messages(message):
     text = message.text
     user = message.chat.id
 
