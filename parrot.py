@@ -23,28 +23,3 @@ def user_message(message):
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
-
-
-
-
-
-
-
-
-# import telebot
-# import random
-
-# token = "6107755679:AAFZ9VB2Fif6ygIQc83Fj3k9advYBEtbiY8"
-# bot = telebot.TeleBot(token=token)
-# stickers = []
-
-# @bot.message_handler(content_types=['sticker'])
-# def echo(message):
-#     user = message.chat.id
-#     sticker = message.sticker.file_id
-
-#     stickers.append(sticker)
-
-#     bot.send_sticker(user,random.choice(stickers))
-
-# bot.polling(none_stop=True)
